@@ -17,6 +17,11 @@
       padding: 20px;
       text-align: center;
     }
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
     nav {
       background-color: #002244;
       text-align: center;
@@ -65,6 +70,28 @@
       color: white;
       padding: 30px 20px;
     }
+    .contact form {
+      max-width: 500px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
     footer {
       background-color: #001122;
       color: #bbb;
@@ -76,6 +103,7 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="EVROS Elite Travel Logo">
     <h1>EVROS Elite Travel</h1>
     <p>Especialistas en Visas Americanas y Boletos a EE. UU.</p>
   </header>
@@ -103,6 +131,13 @@
     <p>WhatsApp: <a href="https://wa.me/50249146403" style="color:#fff; text-decoration: underline;">+502 4914-6403</a></p>
     <p>Correo: <a href="mailto:hola@evroselitetravel.com" style="color:#fff; text-decoration: underline;">hola@evroselitetravel.com</a></p>
     <p>Ubicación: Guatemala | Atención virtual</p>
+
+    <form action="mailto:hola@evroselitetravel.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
   </section>
 
   <footer>
