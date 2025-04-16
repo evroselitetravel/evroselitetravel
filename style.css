@@ -1,42 +1,54 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background: #ffffff;
+  color: #222;
 }
 header {
-  background-color: #0B2447;
-  color: white;
   text-align: center;
   padding: 2em;
+  background-color: #F0F8FF;
 }
 .logo {
-  width: 140px;
+  max-width: 120px;
   margin-bottom: 10px;
 }
 nav {
-  background-color: #102C57;
+  background-color: #0B2447;
   text-align: center;
-  padding: 10px 0;
+  padding: 1em;
 }
 nav a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
 }
 section {
   padding: 2em;
+  text-align: center;
 }
-.visa {
-  margin: 20px 0;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.visa img {
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1em;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.card img {
   width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: auto;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
 }
 .whatsapp-float {
   position: fixed;
@@ -48,5 +60,4 @@ section {
   border-radius: 50px;
   text-decoration: none;
   font-size: 20px;
-  font-weight: bold;
 }
